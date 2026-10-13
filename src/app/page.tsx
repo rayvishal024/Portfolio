@@ -1,0 +1,30 @@
+
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+import { About } from "@/components/sections/about";
+import { Contact } from "@/components/sections/contact";
+import { Education } from "@/components/sections/education";
+import { Experience } from "@/components/sections/experience";
+import { Hero } from "@/components/sections/hero";
+import { Projects } from "@/components/sections/projects";
+import { Skills } from "@/components/sections/skills";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="flex-1">
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
+  );
+}
